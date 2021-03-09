@@ -107,16 +107,12 @@ generateApple()
 
 function control(e) {
     if (e.keyCode === 39) {
-        console.log('right pressed')
         direction = 1
     } else if (e.keyCode === 38) {
-        console.log('up pressed')
         direction = -width
     } else if (e.keyCode === 37) {
-        console.log('left pressed')
         direction = -1
     } else if (e.keyCode === 40) {
-        console.log('down pressed')
         direction = +width
     }
 }
