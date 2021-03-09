@@ -1,0 +1,254 @@
+/* basic styling */
+html, body {
+    margin: 10;
+    padding: 10;
+    font-family: 'Comfortaa', cursive;
+    background-color: #A4DBE8;
+    color: #000000;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 64px;
+    font-weight: bold;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+}
+
+/* styling the game */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px;
+    border: solid 5px black;
+    margin: 0 auto;
+}
+
+.square {
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+}
+
+.snake {
+    background-color: #002B49;
+}
+
+.apple {
+    background-color: #EE3831;
+}
+
+/* settings modal */
+.open-modal {
+    float: right;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 5px 15px;
+    margin: 0;
+    background-color: #002B49;
+    font-size: 14px;
+    font-family: 'Comfortaa', cursive;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    outline: none;
+}
+
+.open-modal:hover,
+.open-modal:active {
+    background-color: #CD001A;
+    cursor: pointer;
+}
+
+.menu-img {
+    width: 25px;
+    height: 25px;
+}
+
+.start, 
+#close-modal {
+    padding: 20px 60px;
+    margin: 40px auto;
+    background-color: #002B49;
+    border: none;
+    font-size: 18px;
+    font-family: 'Comfortaa', cursive;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    outline: none;
+}
+
+#close-modal {
+    margin: 25px auto;
+}
+
+.start:hover,
+.start:active, 
+#close-modal:hover,
+#close-modal:active {
+    background-color: #CD001A;
+    cursor: pointer;
+}
+
+#modal {
+    background-color: white;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 200px;
+    position: relative;
+    top: 30%;
+    text-align: center;
+}
+
+#overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#modal h2 {
+    margin: 0 auto;
+}
+
+#modal p {
+    margin-bottom: 20px;
+}
+
+#modal h3 {
+    margin-top: 30px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+/* dark theme */
+.darkBG {
+    background-color: #174A5B;
+}
+
+.darkTextColor {
+    color: #ffffff;
+}
+
+.darkGridBorder {
+    border: 5px solid #A4DBE8;
+}
+
+.darkStartBtn {
+    padding: 20px 60px;
+    margin: 40px auto;
+    background-color: #A4DBE8;
+    border: none;
+    font-size: 18px;
+    font-family: 'Comfortaa', cursive;
+    color: #174A5B;
+    display: flex;
+    justify-content: center;
+    outline: none;
+}
+
+.darkStartBtn:hover,
+.darkStartBtn:active {
+    background-color: #002B49;
+    color: #ffffff;
+}
+
+.openModalDark {
+    float: right;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 5px 15px;
+    margin: 0px auto;
+    background-color: #A4DBE8;
+    border: none;
+    font-size: 14px;
+    font-family: 'Comfortaa', cursive;
+    color: #174A5B;
+    display: flex;
+    justify-content: center;
+    outline: none;
+}
+
+.openModalDark:hover,
+.openModalDark:active {
+    background-color: #002B49;
+    color: #ffffff;
+    cursor: pointer;
+}
