@@ -100,6 +100,13 @@ function generateApple() {
 } 
 generateApple()
 
+// Makes sure the snake can't turn backwards
+function dir(dir){
+    if (currentSnake[0] + dir != currentSnake[1]){
+        direction = dir;
+    }
+}
+
 // 39 is right arrow
 // 38 is for the up arrow
 // 37 is for the left arrow
@@ -107,13 +114,13 @@ generateApple()
 
 function control(e) {
     if (e.keyCode === 39) {
-        direction = 1
+        dir(1)
     } else if (e.keyCode === 38) {
-        direction = -width
+        dir(-width)
     } else if (e.keyCode === 37) {
-        direction = -1
+        dir(-1)
     } else if (e.keyCode === 40) {
-        direction = +width
+        dir(+width)
     }
 }
 document.addEventListener('keyup', control)
